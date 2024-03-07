@@ -7,7 +7,7 @@ import Error from './ComponentsReact/Error';
 function App() {
   return (
     <div >
-  <p className='textColor'>Kasa</p>
+  <p >Kasa</p>
     </div>
   );
 }

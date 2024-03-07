@@ -1,0 +1,43 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 77.5rem;
+  height: 4.25rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  width: auto;
+  padding-top: 2.81rem;
+  padding-bottom: 3.12rem;
+}
+.headerContainer .navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerContainer .logo {
+  width: 13.14513rem;
+  height: 4.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.headerContainer .links {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5625rem;
+}
+.headerContainer .links > .linkAccueil, .headerContainer .links .linkApropos {
+  width: 8.5rem;
+  cursor: pointer;
+  width: 8.5rem;
+  color: #000;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: none;
+}/*# sourceMappingURL=styles_Header.css.map */

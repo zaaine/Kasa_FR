@@ -1,10 +1,13 @@
+// Environnement React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import '../src/Styles/index.scss';
+import { BrowserRouter as Router, Route, Routes, Form } from 'react-router-dom'
+
+// styles
+import index from '../src/Styles/index.scss';
 
 
-// composant React
+// composants React
 import App from './App';
 import Home from '../src/ComponentsReact/Home'
 import Error from "../src/ComponentsReact/Error/index"

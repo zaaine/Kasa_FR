@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Apropos(){
     return (
-        <h1>Je suis la page A Propos</h1>
+        <p>Je suis la page A Propos</p>
     )
 }
 

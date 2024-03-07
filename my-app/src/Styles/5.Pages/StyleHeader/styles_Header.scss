@@ -1,0 +1,50 @@
+@import '../../3.Layouts/mixins';
+
+.headerContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 77.5rem;
+    height: 4.25rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    width: auto;
+    padding-top: 2.81rem;
+    padding-bottom: 3.12rem;
+
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+    .logo{
+        width: 13.14513rem;
+        height: 4.25rem;
+        object-fit: cover;
+        
+    }
+
+
+    .links{
+
+        display: flex;
+        align-items: flex-start;
+        gap: 3.5625rem;
+       
+        &>.linkAccueil , .linkApropos{
+            width: 8.5rem;
+            cursor: pointer;
+            @include link-style;
+            
+        }
+    }
+
+
+
+
+}
