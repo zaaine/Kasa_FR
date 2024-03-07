@@ -9,6 +9,7 @@ import App from './App';
 import Home from '../src/ComponentsReact/Home'
 import Error from "../src/ComponentsReact/Error/index"
 import Header from './ComponentsReact/Header';
+import Apropos from './ComponentsReact/PageaPropos';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,12 +17,13 @@ root.render(
   <React.StrictMode>
   <Router>
     <Header/>
-    <App />
+    {/* <App /> */}
   <Routes>
   <Route path="/" element={<Home />} />
+  <Route path="/Apropos" element={<Apropos />} />
   <Route path="*" element={<Error />} />
   </Routes>
-
+ 
   </Router>
   </React.StrictMode>
 );

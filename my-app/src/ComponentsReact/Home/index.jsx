@@ -1,6 +1,9 @@
+import React from "react"
+import { Link } from "react-router-dom"
+
 function Home (){
     return (
-        <div> Page Accueil</div>
+        <div >Je suis la page Home a customiser</div>
     )
 }
 

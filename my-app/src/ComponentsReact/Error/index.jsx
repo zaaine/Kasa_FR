@@ -1,3 +1,5 @@
+
+import React from 'react'
 import { Link } from 'react-router-dom'
 import style_Error from '../../Styles/5.Pages/Error404/style_Error.scss'
 
@@ -8,7 +10,9 @@ function Error() {
 
         <p className='text404'>Oups! La page que vous demandez n'existe pas.</p>
 
-        <a className='linkHome' href='../Home/index.jsx'> Retourner sur la page d’accueil </a>
+        <a className='linkHome'  to="/"  href='/'> Retourner sur la page d’accueil </a>
+       
+          
       </div>
     )
   }
