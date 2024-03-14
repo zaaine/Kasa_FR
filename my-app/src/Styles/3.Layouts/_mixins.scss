@@ -34,3 +34,15 @@
     font-weight: 700;
     line-height: 142.6%;
 }
+
+
+// • Typographie composant footer
+@mixin footer-style{
+color: #FFF;
+text-align: center;
+font-family: Montserrat;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: 142.6%;
+}

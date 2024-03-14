@@ -3,7 +3,7 @@ import LOGO from '../../Assets/images/LOGO.png'
 
 // import styles_Header from '../../Styles/5.Pages/StyleHeader/styles_Header.scss'
 
-import styles_Header from '../../Styles/5.Pages/StyleHeader/styles_Header.scss'
+import styles_Header from '../../Styles/4.Components/Header.scss/styles_Header.scss'
 
 
 

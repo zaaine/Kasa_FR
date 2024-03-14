@@ -40,4 +40,7 @@
   font-weight: 500;
   line-height: 142.6%;
   text-decoration: none;
+}
+.headerContainer .links a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles_Header.css.map */

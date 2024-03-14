@@ -39,8 +39,10 @@
         &>.linkAccueil , .linkApropos{
             width: 8.5rem;
             cursor: pointer;
-            @include link-style;
-            
+            @include link-style;   
+        }
+        a:hover{
+            text-decoration: underline;
         }
     }
 

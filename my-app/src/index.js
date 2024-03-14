@@ -13,6 +13,7 @@ import Home from '../src/ComponentsReact/Home'
 import Error from "../src/ComponentsReact/Error/index"
 import Header from './ComponentsReact/Header';
 import Apropos from './ComponentsReact/PageaPropos';
+import Footer from './ComponentsReact/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,7 +27,7 @@ root.render(
   <Route path="/Apropos" element={<Apropos />} />
   <Route path="*" element={<Error />} />
   </Routes>
- 
+  <Footer />
   </Router>
   </React.StrictMode>
 );

@@ -1,0 +1,28 @@
+.footer_container {
+  display: flex;
+  width: auto;
+  height: 13.0625rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.78475rem;
+  background: #000;
+  color: #fff;
+  padding-top: 4.12rem;
+  padding-bottom: 1.81rem;
+}
+.footer_container .footer_logo {
+  color: #fff;
+  width: 7.625rem;
+  height: 2.46525rem;
+  filter: brightness(3.5);
+}
+.footer_container .footer_text {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}/*# sourceMappingURL=styles_Footer.css.map */
