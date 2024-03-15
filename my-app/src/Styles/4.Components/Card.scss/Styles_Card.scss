@@ -1,0 +1,53 @@
+@import '../../3.Layouts/globalStyle';
+@import '../../3.Layouts/mixins';
+
+
+.cards-container{
+    height: auto;
+    width: auto;
+    border-radius: 1.5625rem;
+    background: #F6F6F6;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    box-sizing: border-box
+}
+
+.card-wrapper{
+    width: 19rem;
+    height: 21.25rem;
+    background-color: $secondaireColor;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    border-radius: 0.625rem;
+    margin: 2rem;
+}
+
+.card-img{
+    width: 18rem;
+    height: 12rem;
+    border-radius: 0.625rem;
+    margin: 1rem;
+    object-fit: cover;
+    position: relative;
+    right: 0.5rem;
+}
+
+.card-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%; 
+    margin: 1rem;
+    position: relative;
+    top: 2rem;
+}
