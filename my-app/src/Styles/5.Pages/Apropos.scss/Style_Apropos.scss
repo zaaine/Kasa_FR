@@ -1,0 +1,49 @@
+@import '../../3.Layouts/globalStyle';
+@import '../../3.Layouts/mixins';
+
+
+// format descktop
+
+.contenair-apropos{   
+    margin-bottom: 2.36rem;  
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+.banner-apropos{
+    height: 13.9375rem;
+    border-radius: 1.5625rem;
+    background: #000;
+  
+}
+
+.img-apropos{
+    opacity: 0.5;
+    border-radius: 1.5625rem;
+    height: 100%;
+    width: 100%;
+}
+
+.rank{
+    display: flex;
+    background-color:$secondaireColor;
+    margin: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: white;
+    border-radius: 0.3125rem;
+    margin-top: 2.375rem;
+    padding-left: 0.94rem;
+    @include title-card;
+}
+
+.icones-apropos{
+    width: 2rem;
+    height: 2rem;
+    color : $whiteColor ;
+    line-height: 20px;
+    font-weight: 700;
+    @include title-card;
+    cursor: pointer;
+}
