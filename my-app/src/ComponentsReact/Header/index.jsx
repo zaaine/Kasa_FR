@@ -16,7 +16,6 @@ function Header() {
         <div className='links'>
           <a className="linkAccueil"  to="/" href="/"> Accueil</a>
           <a  className='linkApropos' to="/Apropos" href="Apropos"> A Propos</a>
-          {/* <div to="/Error">Error</div> */}
         </div>
       </div>
     )

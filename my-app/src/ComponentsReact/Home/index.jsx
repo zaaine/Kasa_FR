@@ -24,6 +24,7 @@ function Home (){
         <div className="cards-container">
        {annonces.map ((annonce, index)=>(
         <Card 
+            
             key={`${annonce.title}-${index}`}
             id={annonce.id}
             cover={annonce.cover}

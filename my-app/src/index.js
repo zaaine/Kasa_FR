@@ -14,6 +14,7 @@ import Error from "../src/ComponentsReact/Error/index"
 import Header from './ComponentsReact/Header';
 import Apropos from './ComponentsReact/PageaPropos';
 import Footer from './ComponentsReact/Footer';
+import AnnonceLogement from './ComponentsReact/AnnonceLogement';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
   <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/Apropos" element={<Apropos />} />
+  <Route path="/AnnonceLogement" element={<AnnonceLogement/>} />
   <Route path="*" element={<Error />} />
   </Routes>
   <Footer />
