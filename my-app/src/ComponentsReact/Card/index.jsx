@@ -1,5 +1,6 @@
 // Composants React
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 // Styles --- contenus
 import annonces from '../../Assets/AnnoncesLogement/annonces.json'
@@ -9,34 +10,16 @@ import { useState, useEffect } from 'react';
 
 
 
- const KeepId = (e) => {
-  console.log(e);
-  const annonceId = (e)
-  
-  // enregistrer l'ID et le sauvegarder dans le local.storage pour mapper la liste et la retourner sur la page annonce. 
-  const [count, setCount] = useState(localStorage.getItem('count'))
-  setCount(count + annonceId)
-  
-  useEffect(() => {
-    console.log(annonceId);
-    
-    localStorage.setItem("id", count.toString());
-  }, []);
- 
-}
-
-
-
-
 function Card ({id,cover,title}){
 
+
     return(
-        <a to="/AnnonceLogement" href='/AnnonceLogement' >
-      <div className='card-wrapper' id={id} to="/AnnonceLogement" onClick={()=> KeepId(id)}>
+        <Link  to={`/AnnonceLogement/${id}`} >
+      <div className='card-wrapper' >
         <img src={cover} alt="cover-annonces" className='card-img' />
         <p className='card-text'>{title}</p>
       </div>
-        </a>
+        </Link>
     )
 
     Card.propTypes = {

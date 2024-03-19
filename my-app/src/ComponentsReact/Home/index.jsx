@@ -4,6 +4,7 @@ import { Form, Link } from "react-router-dom"
 // composants React
 import home from '../../Assets/images/home.png';
 import Card from "../Card";
+
 // Styles -- 
 import annonces from '../../Assets/AnnoncesLogement/annonces.json'
 import styles_Home from '../../Styles/5.Pages/Home.scss/styles_Home.scss'
@@ -18,8 +19,6 @@ function Home (){
         <img className="banner_img" src={home} alt="photo paysage" />
         <p className="banner_title">Chez vous, partout et ailleurs </p>
         </div>
-
-
         
         <div className="cards-container">
        {annonces.map ((annonce, index)=>(
@@ -33,8 +32,6 @@ function Home (){
        ))}
 
         </div>
-        
-        
         
         </div>
     )
