@@ -29,27 +29,40 @@ useEffect(() => {
     
    
     return (
-        <div className="contenaire-annonce"> 
+        <div className="annonce-contenaire"> 
         
-        <div>
-            <img src={value.cover} alt="" />
+        <div className="annonce-imgs">
+            <img className="annonce-img" src={value.cover} alt="" />
         </div>
 
         <div>
-        <div>
-            <h1>{value.title} </h1>
-            <p>{value.location} </p>
+        <div className="contenaire_titre">
+            <h1 className="annonce-title">{value.title} </h1>
+            <p className="annonce-name">{value.host.name}</p>
+            <img className="annonce-photo" src={value.host.picture} alt="photo-hosting" />
         </div>
-            <p>{value.host.name}</p>
-            <img src={value.host.picture} alt="photo-hosting" />
+            <p className="annonce-location">{value.location} </p>
         </div>
         
-        <div> {value.tags} </div>
-        <div> {value.rating} </div>
+        <section className="contenaire_comments">
+        <div className="annonce-tags"> {value.tags} </div>
 
-        <div>{value.description}</div>
-        <div>{value.equipments} </div>
-         </div>
+        <div className="annonce-rating"> {value.rating} </div>
+        </section>
+
+        <section className="box-description-equipments"> 
+        <div >
+        <div className="contenaire_description"> Description </div>
+        <div className="annonce-description" >{value.description}</div>
+        </div>
+
+        <div>
+        <div className="contenaire_equipments">Équipements</div>
+        <div className="annonce-equipments">{value.equipments} </div>
+        </div>
+        </section>
+        
+        </div>
     )
 }
 

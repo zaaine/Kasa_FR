@@ -1,9 +1,104 @@
 @import  '../../3.Layouts/_mixins';
 
 
-.contenaire-annonce{
-    
+.annonce-contenaire{
     width: auto;
     margin-bottom: 2.36rem; 
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+
+}
+
+// carroussel
+.annonce-imgs{
+    display: flex;
+    width: 100%;
+
+
+    .annonce-img{
+        height: 25.9375rem;
+       
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.contenaire_titre{
+    height: 4.8125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .annonce-title{
+        @include title-style;
+    }
     
+    .annonce-name{
+    @include text-style;
+    color: #FF6060;
+    inline-size: 2px;
+    writing-mode: horizontal-tb;
+    }
+    
+    .annonce-photo{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+}
+
+
+.annonce-location{
+    height: 1.8125rem;
+    @include text-style;
+
+
+}
+
+
+.contenaire_comments{ 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+
+        .annonce-tags{
+        height: 1.5625rem;
+        @include contenaire-style;
+        margin-bottom: 2rem;
+        .annonce-rating{}
+}
+
+
+}
+
+.box-description-equipments{ 
+
+display: flex;
+gap:1rem;
+
+.contenaire_description{
+    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+    @include contenaire-style;
+    width: 26.375rem;
+    display: flex;
+}
+
+.annonce-description{
+    width: 26.375rem;
+}
+
+
+.contenaire_equipments{
+    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+    @include contenaire-style;
+    width: 26.375rem;
+    display: flex;
+
+}
+.annonce-equipments{
+    width: 26.375rem;
+}
 }

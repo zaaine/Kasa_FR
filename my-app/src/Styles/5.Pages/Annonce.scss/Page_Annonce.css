@@ -1,4 +1,119 @@
-.contenaire-annonce {
+.annonce-contenaire {
   width: auto;
   margin-bottom: 2.36rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.annonce-imgs {
+  display: flex;
+  width: 100%;
+}
+.annonce-imgs .annonce-img {
+  height: 25.9375rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenaire_titre {
+  height: 4.8125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.contenaire_titre .annonce-title {
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+.contenaire_titre .annonce-name {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  color: #FF6060;
+  inline-size: 2px;
+  writing-mode: horizontal-tb;
+}
+.contenaire_titre .annonce-photo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.annonce-location {
+  height: 1.8125rem;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+}
+
+.contenaire_comments {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.contenaire_comments .annonce-tags {
+  height: 1.5625rem;
+  color: white;
+  border-radius: 0.625rem;
+  background: #FF6060;
+  padding: 1rem;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.box-description-equipments {
+  display: flex;
+  gap: 1rem;
+}
+.box-description-equipments .contenaire_description {
+  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  color: white;
+  border-radius: 0.625rem;
+  background: #FF6060;
+  padding: 1rem;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  width: 26.375rem;
+  display: flex;
+}
+.box-description-equipments .annonce-description {
+  width: 26.375rem;
+}
+.box-description-equipments .contenaire_equipments {
+  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  color: white;
+  border-radius: 0.625rem;
+  background: #FF6060;
+  padding: 1rem;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  width: 26.375rem;
+  display: flex;
+}
+.box-description-equipments .annonce-equipments {
+  width: 26.375rem;
 }/*# sourceMappingURL=Page_Annonce.css.map */
