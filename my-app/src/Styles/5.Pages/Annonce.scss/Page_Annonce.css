@@ -20,9 +20,17 @@
   height: 4.8125rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+.contenaire_titre .contenaire_identite {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 10rem;
+  align-items: center;
+  margin-top: 1rem;
 }
 .contenaire_titre .annonce-title {
   color: #FF6060;
@@ -30,7 +38,7 @@
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 142.6%;
+  width: auto;
 }
 .contenaire_titre .annonce-name {
   color: #000;
@@ -42,6 +50,7 @@
   color: #FF6060;
   inline-size: 2px;
   writing-mode: horizontal-tb;
+  width: auto;
 }
 .contenaire_titre .annonce-photo {
   width: 4rem;
@@ -66,53 +75,68 @@
   align-items: center;
   flex-wrap: nowrap;
 }
+.contenaire_comments .contenaire_tags {
+  display: flex;
+  gap: 2rem;
+  margin-right: 2rem;
+}
 .contenaire_comments .annonce-tags {
   height: 1.5625rem;
   color: white;
-  border-radius: 0.625rem;
+  border-radius: 0.3125rem;
   background: #FF6060;
-  padding: 1rem;
   text-align: center;
   font-family: Montserrat;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
 }
 .box-description-equipments {
   display: flex;
   gap: 1rem;
 }
 .box-description-equipments .contenaire_description {
-  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 26.375rem;
+  margin-bottom: 1rem;
   color: white;
-  border-radius: 0.625rem;
+  border-radius: 0.3125rem;
   background: #FF6060;
-  padding: 1rem;
   text-align: center;
   font-family: Montserrat;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
-  width: 26.375rem;
-  display: flex;
+  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+}
+.box-description-equipments .arrow-back {
+  width: 2rem;
+  height: 2rem;
 }
 .box-description-equipments .annonce-description {
   width: 26.375rem;
 }
 .box-description-equipments .contenaire_equipments {
-  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 26.375rem;
+  margin-bottom: 1rem;
   color: white;
-  border-radius: 0.625rem;
+  border-radius: 0.3125rem;
   background: #FF6060;
-  padding: 1rem;
   text-align: center;
   font-family: Montserrat;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
-  width: 26.375rem;
-  display: flex;
+  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
 }
 .box-description-equipments .annonce-equipments {
   width: 26.375rem;

@@ -26,6 +26,7 @@
 
 .rank{
     display: flex;
+    align-items: center;
     background-color:$secondaireColor;
     margin: 1rem;
     flex-direction: row;
@@ -41,9 +42,12 @@
 .icones-apropos{
     width: 2rem;
     height: 2rem;
-    color : $whiteColor ;
-    line-height: 20px;
-    font-weight: 700;
-    @include title-card;
     cursor: pointer;
+    padding-right: 1.5rem;
+
+}
+
+.icones-apropos:active{
+    transform: rotate(180deg);
+    margin-right: 2rem;
 }

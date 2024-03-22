@@ -17,7 +17,6 @@
 
     .annonce-img{
         height: 25.9375rem;
-       
         width: 100%;
         object-fit: cover;
     }
@@ -27,11 +26,20 @@
     height: 4.8125rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     flex-wrap: nowrap;
+    .contenaire_identite{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 10rem;
+    align-items: center;
+    margin-top: 1rem;
+    }
     .annonce-title{
-        @include title-style;
+    @include title-style;
+    width: auto;
     }
     
     .annonce-name{
@@ -39,6 +47,7 @@
     color: #FF6060;
     inline-size: 2px;
     writing-mode: horizontal-tb;
+    width: auto;
     }
     
     .annonce-photo{
@@ -64,11 +73,22 @@
     align-items: center;
     flex-wrap: nowrap;
 
+    .contenaire_tags{
+        display: flex;
+        gap:2rem;
+        margin-right: 2rem;
+    }
+
         .annonce-tags{
         height: 1.5625rem;
         @include contenaire-style;
         margin-bottom: 2rem;
-        .annonce-rating{}
+        display: flex;
+        align-items: center;
+        padding:0.5rem;
+        .annonce-rating{
+
+        }
 }
 
 
@@ -80,10 +100,18 @@ display: flex;
 gap:1rem;
 
 .contenaire_description{
-    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
-    @include contenaire-style;
-    width: 26.375rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26.375rem;
+    margin-bottom: 1rem;
+    @include contenaire-style;
+    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+}
+
+.arrow-back{
+    width: 2rem;
+    height: 2rem;
 }
 
 .annonce-description{
@@ -92,12 +120,16 @@ gap:1rem;
 
 
 .contenaire_equipments{
-    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
-    @include contenaire-style;
-    width: 26.375rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 26.375rem;
+    margin-bottom: 1rem;
+    @include contenaire-style;
+    padding: 0.625rem 1.25rem 0.625rem 0.625rem;
 
 }
+
 .annonce-equipments{
     width: 26.375rem;
 }

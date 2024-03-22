@@ -14,7 +14,7 @@ function Card ({id,cover,title}){
 
 
     return(
-        <Link  to={`/AnnonceLogement/${id}`} >
+        <Link className='card-link' to={`/AnnonceLogement/${id}`} >
       <div className='card-wrapper' >
         <img src={cover} alt="cover-annonces" className='card-img' />
         <p className='card-text'>{title}</p>

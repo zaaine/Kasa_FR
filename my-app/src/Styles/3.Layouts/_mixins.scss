@@ -54,8 +54,7 @@ color: #FF6060;
 font-family: Montserrat;
 font-size: 2.25rem;
 font-style: normal;
-font-weight: 500;
-line-height: 142.6%; 
+font-weight: 500; 
 }
 
 @mixin text-style{
@@ -70,9 +69,8 @@ line-height: 142.6%;
 
 @mixin contenaire-style{
     color: white;
-    border-radius: 0.625rem;
+    border-radius: 0.3125rem;
     background: #FF6060;
-    padding: 1rem;
     text-align: center;
     font-family: Montserrat;
     font-size: 0.875rem;

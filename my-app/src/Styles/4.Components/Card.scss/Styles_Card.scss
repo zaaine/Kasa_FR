@@ -12,9 +12,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-content: space-around;
     justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    box-sizing: border-box
+    align-items: stretch;
+    justify-items: stretch;
+    box-sizing: border-box;
+    padding-left: 3.13rem;
+    padding-right: 3.13rem;
 }
 
 .card-wrapper{
@@ -28,6 +30,7 @@
     cursor: pointer;
     border-radius: 0.625rem;
     margin: 2rem;
+    text-decoration: none;
 }
 
 .card-img{
@@ -38,6 +41,7 @@
     object-fit: cover;
     position: relative;
     right: 0.5rem;
+    margin-bottom: revert;
 }
 
 .card-text{
@@ -50,4 +54,8 @@
     margin: 1rem;
     position: relative;
     top: 2rem;
+}
+
+.card-link{
+    text-decoration: none;
 }

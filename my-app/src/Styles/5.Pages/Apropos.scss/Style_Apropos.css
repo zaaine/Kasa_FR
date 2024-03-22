@@ -19,6 +19,7 @@
 
 .rank {
   display: flex;
+  align-items: center;
   background-color: #FF6060;
   margin: 1rem;
   flex-direction: row;
@@ -39,14 +40,11 @@
 .icones-apropos {
   width: 2rem;
   height: 2rem;
-  color: #fff;
-  line-height: 20px;
-  font-weight: 700;
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 142.6%;
   cursor: pointer;
+  padding-right: 1.5rem;
+}
+
+.icones-apropos:active {
+  transform: rotate(180deg);
+  margin-right: 2rem;
 }/*# sourceMappingURL=Style_Apropos.css.map */
