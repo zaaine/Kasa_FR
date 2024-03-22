@@ -1,11 +1,16 @@
+// React 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+// import ReactStars from "react-rating-stars-component";
+import { Rating } from 'react-simple-star-rating';
+
+// Files
 import annonces from '../../Assets/AnnoncesLogement/annonces.json'
 import Page_Annonce from '../../Styles/5.Pages/Annonce.scss/Page_Annonce.scss';
+import arrow_back from '../../Assets/images/Arrows/arrow_back_ios-24px 2.png'
 import Home from "../Home";
 
-import arrow_back from '../../Assets/images/Arrows/arrow_back_ios-24px 2.png'
 
 function AnnonceLogement (){
 
@@ -54,8 +59,16 @@ useEffect(() => {
         <div className="annonce-tags"> {value.tags[1]} </div>
         </div>
         
-        <div>
-        <div className="annonce-rating"> {value.rating} </div>
+        <div className="stars-wrapper">
+     
+        <Rating  className="stars-notation" 
+                 initialValue={value.rating} 
+                 readonly={true}
+                 fillClassName='stars-notation'
+                 fillColor="#ff6060"
+                 value={value.rating}
+                 size={'35px'}   
+                 />
         </div>
         </section>
 

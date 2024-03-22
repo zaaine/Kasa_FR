@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 10rem;
+  width: 11rem;
   align-items: center;
   margin-top: 1rem;
 }
@@ -72,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: nowrap;
 }
 .contenaire_comments .contenaire_tags {
@@ -95,6 +95,7 @@
   align-items: center;
   padding: 0.5rem;
 }
+
 .box-description-equipments {
   display: flex;
   gap: 1rem;
@@ -121,6 +122,13 @@
 }
 .box-description-equipments .annonce-description {
   width: 26.375rem;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  font-weight: 300;
 }
 .box-description-equipments .contenaire_equipments {
   display: flex;
@@ -140,4 +148,25 @@
 }
 .box-description-equipments .annonce-equipments {
   width: 26.375rem;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  font-weight: 300;
+  word-spacing: 1rem;
+}
+
+.stars-wrapper {
+  display: flex;
+  width: 12.25rem;
+  height: 2.25rem;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.stars-wrapper .stars-notation {
+  color: #FF6060;
+  size: 15px;
 }/*# sourceMappingURL=Page_Annonce.css.map */
