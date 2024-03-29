@@ -122,19 +122,14 @@
     cursor: pointer;
 }
 
-// .arrow-back:active{
-//     // transform: rotate(180deg);
-//     // margin-left: 2rem;
-//     animation-name: container-view;
-//     animation-duration: 10s;
-// }
+
 
 .annonce-description{
     min-width: 25rem;
     font-weight: 300;
-    @include text-style;
     display:block;
     animation: container-view 2s ease-in-out;
+    @include text-style;
     
 }
 
@@ -154,10 +149,14 @@
 }
 
 .annonce-equipments{
+    animation: container-view 10s ease-in-out;   
+    display:block;
     width: 26.375rem;
+}
+
+.equipement{
     @include text-style;
-    font-weight: 300;
-    animation: container-view 2s ease-in-out;   
+    margin: 12px;
 }
 }
 

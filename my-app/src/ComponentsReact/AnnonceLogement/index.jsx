@@ -27,6 +27,13 @@ const  annonceID = params.id
         setToggle(!toggle)
     }
 
+    const [view, setView] = useState(false)
+    
+    
+    const toggleFunctionBis = () => {
+        setView(!view)
+    }
+
 useEffect(() => { 
     annonces.map ((annonce, index) => {
         if (annonceID === annonce.id){
@@ -95,13 +102,13 @@ useEffect(() => {
         <div>
         <div className="contenaire_equipments">
         <div >Équipements</div>
-        <img onClick={toggleFunction} className={toggle ? "arrow" : "arrow-back"} src={arrow_back} alt="ouvrir"/>
+        <img onClick={toggleFunctionBis} className={view ? "arrow" : "arrow-back"} src={arrow_back} alt="ouvrir"/>
         </div>
         <div>
-        <div className={toggle ? "annonce-equipments" : "annonce-clear"}>{value.equipments.map((equipment,i)=>(
-            <ul key={i}>
-                <li>{equipment}</li>
-            </ul>
+        <div className={view ? "annonce-equipments" : "annonce-clear"}>{value.equipments.map((equipment,i)=>(
+            <div key={i}>
+                <p className="equipement">{equipment}</p>
+            </div>
         ))} </div>
         </div>
         </div>

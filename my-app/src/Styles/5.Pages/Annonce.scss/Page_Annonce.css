@@ -62,6 +62,10 @@
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
+  letter-spacing: 1px;
+  text-align: justify;
+  text-wrap: pretty;
+  font-weight: 300;
   color: #FF6060;
   inline-size: 2px;
   writing-mode: horizontal-tb;
@@ -80,6 +84,10 @@
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
+  letter-spacing: 1px;
+  text-align: justify;
+  text-wrap: pretty;
+  font-weight: 300;
 }
 
 .contenaire_comments {
@@ -149,12 +157,16 @@
 .box-description-equipments .annonce-description {
   min-width: 25rem;
   font-weight: 300;
+  display: block;
+  animation: container-view 2s ease-in-out;
   color: #000;
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
-  display: block;
-  animation: container-view 2s ease-in-out;
+  letter-spacing: 1px;
+  text-align: justify;
+  text-wrap: pretty;
+  font-weight: 300;
 }
 .box-description-equipments .annonce-clear {
   display: none;
@@ -177,13 +189,20 @@
   padding: 0.625rem 1.25rem 0.625rem 0.625rem;
 }
 .box-description-equipments .annonce-equipments {
+  animation: container-view 10s ease-in-out;
+  display: block;
   width: 26.375rem;
+}
+.box-description-equipments .equipement {
   color: #000;
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
+  letter-spacing: 1px;
+  text-align: justify;
+  text-wrap: pretty;
   font-weight: 300;
-  animation: container-view 2s ease-in-out;
+  margin: 12px;
 }
 
 .stars-wrapper {
