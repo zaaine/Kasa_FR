@@ -1,3 +1,20 @@
+@keyframes container-view {
+  0% {
+    overflow: hidden;
+    max-height: 0%;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+    max-height: 10%;
+  }
+  50% {
+    max-height: 50%;
+  }
+  100% {
+    max-height: 100%;
+  }
+}
 .annonce-contenaire {
   width: auto;
   margin-bottom: 2.36rem;
@@ -20,7 +37,7 @@
   height: 4.8125rem;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
 }
@@ -45,8 +62,6 @@
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
   color: #FF6060;
   inline-size: 2px;
   writing-mode: horizontal-tb;
@@ -60,12 +75,11 @@
 
 .annonce-location {
   height: 1.8125rem;
+  margin: 0px;
   color: #000;
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
 }
 
 .contenaire_comments {
@@ -79,6 +93,7 @@
   display: flex;
   gap: 2rem;
   margin-right: 2rem;
+  padding-top: 1rem;
 }
 .contenaire_comments .annonce-tags {
   height: 1.5625rem;
@@ -94,18 +109,23 @@
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .box-description-equipments {
   display: flex;
-  gap: 1rem;
+  gap: 4.75rem;
+  width: 100%;
+  justify-content: space-between;
 }
 .box-description-equipments .contenaire_description {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 26.375rem;
+  min-width: 28rem;
+  width: 100%;
   margin-bottom: 1rem;
+  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
   color: white;
   border-radius: 0.3125rem;
   background: #FF6060;
@@ -114,27 +134,37 @@
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
-  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
 }
 .box-description-equipments .arrow-back {
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
+}
+.box-description-equipments .arrow {
+  width: 2rem;
+  height: 2rem;
+  rotate: -180deg;
+  cursor: pointer;
 }
 .box-description-equipments .annonce-description {
-  width: 26.375rem;
+  min-width: 25rem;
+  font-weight: 300;
   color: #000;
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
-  font-weight: 300;
+  display: block;
+  animation: container-view 2s ease-in-out;
+}
+.box-description-equipments .annonce-clear {
+  display: none;
 }
 .box-description-equipments .contenaire_equipments {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 26.375rem;
+  width: 100%;
+  min-width: 30rem;
   margin-bottom: 1rem;
   color: white;
   border-radius: 0.3125rem;
@@ -152,10 +182,8 @@
   font-family: Montserrat;
   font-size: 1.125rem;
   font-style: normal;
-  font-weight: 500;
-  line-height: 142.6%;
   font-weight: 300;
-  word-spacing: 1rem;
+  animation: container-view 2s ease-in-out;
 }
 
 .stars-wrapper {

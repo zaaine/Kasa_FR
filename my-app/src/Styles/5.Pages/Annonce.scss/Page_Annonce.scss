@@ -1,4 +1,6 @@
 @import  '../../3.Layouts/_mixins';
+// @import '../../2.Utils/Keyframes.scss'
+@import '../../2.Utils/Keyframes';
 
 
 .annonce-contenaire{
@@ -6,7 +8,6 @@
     margin-bottom: 2.36rem; 
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-
 }
 
 // carroussel
@@ -26,9 +27,10 @@
     height: 4.8125rem;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
+
     .contenaire_identite{
     display: flex;
     flex-direction: row;
@@ -60,9 +62,8 @@
 
 .annonce-location{
     height: 1.8125rem;
+    margin: 0px;
     @include text-style;
-
-
 }
 
 
@@ -77,6 +78,7 @@
         display: flex;
         gap:2rem;
         margin-right: 2rem;
+        padding-top: 1rem;
     }
 
         .annonce-tags{
@@ -86,55 +88,76 @@
         display: flex;
         align-items: center;
         padding:0.5rem;
-      
+        cursor: pointer;    
 }
-
-
 }
 
 .box-description-equipments{ 
-
-display: flex;
-gap:1rem;
+    display: flex;
+    gap: 4.75rem;
+    width: 100%;
+    justify-content: space-between;
 
 .contenaire_description{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 26.375rem;
+    min-width: 28rem;
+    width: 100%;
     margin-bottom: 1rem;
-    @include contenaire-style;
     padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+    @include contenaire-style;
 }
 
 .arrow-back{
     width: 2rem;
     height: 2rem;
+    cursor: pointer;
 }
+
+.arrow{
+    width: 2rem;
+    height: 2rem;
+    rotate: -180deg;
+    cursor: pointer;
+}
+
+// .arrow-back:active{
+//     // transform: rotate(180deg);
+//     // margin-left: 2rem;
+//     animation-name: container-view;
+//     animation-duration: 10s;
+// }
 
 .annonce-description{
-    width: 26.375rem;
-    @include text-style;
+    min-width: 25rem;
     font-weight: 300;
+    @include text-style;
+    display:block;
+    animation: container-view 2s ease-in-out;
+    
 }
 
+.annonce-clear{
+    display: none;
+}
 
 .contenaire_equipments{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 26.375rem;
+    width: 100%;
+    min-width: 30rem;
     margin-bottom: 1rem;
     @include contenaire-style;
     padding: 0.625rem 1.25rem 0.625rem 0.625rem;
-
 }
 
 .annonce-equipments{
     width: 26.375rem;
     @include text-style;
     font-weight: 300;
-    word-spacing: 1rem;
+    animation: container-view 2s ease-in-out;   
 }
 }
 
@@ -149,7 +172,6 @@ gap:1rem;
 
     .stars-notation{
     color: #FF6060;
-    size: 15px;
-        
+    size: 15px; 
     }
 }
