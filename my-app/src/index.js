@@ -22,10 +22,10 @@ root.render(
   <React.StrictMode>
   <Router>
     <Header/>
-    {/* <App /> */}
   <Routes>
   <Route path="/" element={<Home />} />
   <Route path="/Apropos" element={<Apropos />} />
+  <Route path="/AnnonceLogement/Apropos" element={<Apropos />} />
   <Route path="/AnnonceLogement/:id" element={<AnnonceLogement/>} />
   <Route path="*" element={<Error />} />
   </Routes>

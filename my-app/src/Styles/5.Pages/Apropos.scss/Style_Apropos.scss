@@ -1,53 +1,84 @@
 @import '../../3.Layouts/globalStyle';
 @import '../../3.Layouts/mixins';
-
+@import '../../2.Utils/Keyframes';
 
 // format descktop
 
-.contenair-apropos{   
-    margin-bottom: 2.36rem;  
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+.contenair-apropos {
+  margin-bottom: 2.36rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
-.banner-apropos{
-    height: 13.9375rem;
-    border-radius: 1.5625rem;
-    background: #000;
-  
+.banner-apropos {
+  height: 13.9375rem;
+  border-radius: 1.5625rem;
+  background: #000;
 }
 
-.img-apropos{
-    opacity: 0.5;
-    border-radius: 1.5625rem;
-    height: 100%;
-    width: 100%;
+.img-apropos {
+  opacity: 0.5;
+  border-radius: 1.5625rem;
+  height: 100%;
+  width: 100%;
 }
 
-.rank{
-    display: flex;
-    align-items: center;
-    background-color:$secondaireColor;
-    margin: 1rem;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    color: white;
-    border-radius: 0.3125rem;
-    margin-top: 2.375rem;
-    padding-left: 0.94rem;
-    @include title-card;
+.rank {
+  display: flex;
+  align-items: center;
+  background-color: $secondaireColor;
+  margin: 1rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: white;
+  border-radius: 0.3125rem;
+  margin-top: 2.375rem;
+  padding-left: 0.94rem;
+  @include title-card;
 }
 
-.icones-apropos{
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    padding-right: 1.5rem;
-
+.icones-apropos {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  padding-right: 1.5rem;
 }
 
-.icones-apropos:active{
-    transform: rotate(180deg);
-    margin-left: 2rem;
+.icones-apropos:active {
+  transform: rotate(180deg);
+  margin-left: 2rem;
+}
+
+.arrow-back {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.arrow {
+  width: 2rem;
+  height: 2rem;
+  rotate: -180deg;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.annonce-descriptionP {
+  min-width: 25rem;
+  font-weight: 300;
+  display: block;
+  animation: container-view 2s ease-in-out;
+  @include text-style;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.annonce-clear {
+  display: none;
+}
+
+.button {
+  display: contents;
 }
