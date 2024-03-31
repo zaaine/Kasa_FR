@@ -68,7 +68,7 @@
   text-align: justify;
   text-wrap: pretty;
   font-weight: 300;
-  color: #FF6060;
+  color: #ff6060;
   inline-size: 2px;
   writing-mode: horizontal-tb;
   width: auto;
@@ -216,6 +216,6 @@
   flex-wrap: nowrap;
 }
 .stars-wrapper .stars-notation {
-  color: #FF6060;
+  color: #ff6060;
   size: 15px;
 }/*# sourceMappingURL=Page_Annonce.css.map */
