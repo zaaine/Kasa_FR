@@ -1,44 +1,51 @@
-
-.LayoutPage404{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-
+.LayoutPage404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
-.number404{
-    display: flex;
-    width: 37.3125rem;
-    height: 16.4375rem;
-    flex-direction: column;
-    justify-content: center;
-    color: #FF6060;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 18rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 142.6%;
+.number404 {
+  display: flex;
+  width: 37.3125rem;
+  height: 16.4375rem;
+  flex-direction: column;
+  justify-content: center;
+  color: #ff6060;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.6%;
+  @media screen and (max-width: 650px) {
+    width: auto;
+    font-size: 8rem;
+  }
 }
 
-.text404{
-    color: #FF6060;
-    font-family: Montserrat;
-    font-size: 2.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
+.text404 {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  @media screen and (max-width: 650px) {
+    margin-bottom: 2rem;
+    margin-left: 3.5rem;
+    font-size: 1.25rem;
+  }
 }
 
-.linkHome{
-    color: #000;
-    font-family: Montserrat;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%; /* 1.60425rem */
-    text-decoration-line: underline;
+.linkHome {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration-line: underline;
 }

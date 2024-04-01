@@ -1,8 +1,8 @@
 import React from 'react'
-import { Form, Link } from 'react-router-dom'
+// import { Form, Link } from 'react-router-dom'
 
 // composants React
-import home from '../../Assets/images/home.png'
+// import home from '../../Assets/images/home.png'
 import Card from '../../ComponentsReact/Card'
 
 // Styles --

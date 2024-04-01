@@ -12,8 +12,11 @@
   "rules": {
     "prettier/prettier": "error",
     "ignoreImports": "off",
-    "ignoreDestructuring": true,
+    "ignoreDestructuring": "off",
     "camelcase": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "padded-blocks": "off",
+    "semi": "off",
+    "singleQuote": false
   }
 }

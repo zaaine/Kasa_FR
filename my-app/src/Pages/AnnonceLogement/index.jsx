@@ -10,6 +10,7 @@ import arrow_back from '../../Assets/images/Arrows/arrow_back_ios-24px 2.png'
 
 // componements
 import Slider from '../../ComponentsReact/Carousel'
+import Error from '../Error'
 
 function AnnonceLogement() {
   const [value, setValue] = useState('')
@@ -31,13 +32,18 @@ function AnnonceLogement() {
   useEffect(() => {
     annonces.map((annonce) => {
       if (annonceID === annonce.id) {
-        setValue(annonce), setImageSlider(annonce.pictures)
+        setValue(annonce)
+        setImageSlider(annonce.pictures)
       }
     })
   }, [])
 
   if (value === '') {
-    return
+    return (
+      <div>
+        <Error />
+      </div>
+    )
   }
 
   return (
@@ -55,7 +61,7 @@ function AnnonceLogement() {
             <img
               className="annonce-photo"
               src={value.host.picture}
-              alt="photo-hosting"
+              alt="présentation du logement"
             />
           </div>
         </div>
@@ -64,7 +70,6 @@ function AnnonceLogement() {
 
       <section className="contenaire_comments">
         <div className="contenaire_tags">
-          {' '}
           {value.tags.map((tag, i) => (
             <p key={i} className="annonce-tags">
               {tag}
@@ -92,10 +97,10 @@ function AnnonceLogement() {
             <div> Description </div>
             <div className="tools">
               <img
-                onClick={toggleFunction}
                 className={toggle ? 'arrow' : 'arrow-back'}
+                onClick={toggleFunction}
                 src={arrow_back}
-                alt="ouvrir"
+                alt="cliquez pour voir le contenu"
               />
             </div>
           </div>
@@ -109,10 +114,10 @@ function AnnonceLogement() {
             <div>Équipements</div>
             <div className="tools">
               <img
-                onClick={toggleFunctionBis}
                 className={view ? 'arrow' : 'arrow-back'}
+                alt="cliquez pour voir le contenu"
                 src={arrow_back}
-                alt="ouvrir"
+                onClick={toggleFunctionBis}
               />
             </div>
           </div>
@@ -122,7 +127,7 @@ function AnnonceLogement() {
                 <div key={i}>
                   <p className="equipement">{equipment}</p>
                 </div>
-              ))}{' '}
+              ))}
             </div>
           </div>
         </div>

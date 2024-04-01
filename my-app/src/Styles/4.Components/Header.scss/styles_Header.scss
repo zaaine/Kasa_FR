@@ -13,36 +13,50 @@
   padding-top: 2.81rem;
   padding-bottom: 3.12rem;
 
-  .navBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 750px) {
+    padding-top: 1.25rem;
+    padding-bottom: 1.59rem;
+    margin-left: 1.5rem;
+  }
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 13.14513rem;
+  height: 4.25rem;
+  object-fit: cover;
+  @media screen and (max-width: 750px) {
+    width: 9.0625rem;
+    height: 2.93rem;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5625rem;
+  @media screen and (max-width: 750px) {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    gap: 1rem;
   }
 
-  .logo {
-    width: 13.14513rem;
-    height: 4.25rem;
-    object-fit: cover;
-  }
-
-  .links {
-    display: flex;
-    align-items: flex-start;
-    gap: 3.5625rem;
+  & > .linkAccueil,
+  .linkApropos {
+    width: 8.5rem;
+    cursor: pointer;
+    @include link-style;
     @media screen and (max-width: 750px) {
-      text-transform: uppercase;
+      width: auto;
       font-size: 0.75rem;
-      gap: 0rem;
     }
-
-    & > .linkAccueil,
-    .linkApropos {
-      width: 8.5rem;
-      cursor: pointer;
-      @include link-style;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }

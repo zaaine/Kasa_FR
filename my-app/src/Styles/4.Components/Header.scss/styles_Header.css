@@ -11,31 +11,47 @@
   padding-top: 2.81rem;
   padding-bottom: 3.12rem;
 }
-.headerContainer .navBar {
+@media screen and (max-width: 750px) {
+  .headerContainer {
+    padding-top: 1.25rem;
+    padding-bottom: 1.59rem;
+    margin-left: 1.5rem;
+  }
+}
+
+.navBar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.headerContainer .logo {
+
+.logo {
   width: 13.14513rem;
   height: 4.25rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.headerContainer .links {
+@media screen and (max-width: 750px) {
+  .logo {
+    width: 9.0625rem;
+    height: 2.93rem;
+  }
+}
+
+.links {
   display: flex;
   align-items: flex-start;
   gap: 3.5625rem;
 }
 @media screen and (max-width: 750px) {
-  .headerContainer .links {
+  .links {
     text-transform: uppercase;
     font-size: 0.75rem;
-    gap: 0rem;
+    gap: 1rem;
   }
 }
-.headerContainer .links > .linkAccueil,
-.headerContainer .links .linkApropos {
+.links > .linkAccueil,
+.links .linkApropos {
   width: 8.5rem;
   cursor: pointer;
   width: 8.5rem;
@@ -48,6 +64,13 @@
   line-height: 142.6%;
   text-decoration: none;
 }
-.headerContainer .links a:hover {
+@media screen and (max-width: 750px) {
+  .links > .linkAccueil,
+  .links .linkApropos {
+    width: auto;
+    font-size: 0.75rem;
+  }
+}
+.links a:hover {
   text-decoration: underline;
 }/*# sourceMappingURL=styles_Header.css.map */

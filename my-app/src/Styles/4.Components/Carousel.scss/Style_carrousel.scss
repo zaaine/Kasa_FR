@@ -13,9 +13,7 @@
   background-repeat: no-repeat;
   aspect-ratio: 16/9;
   margin-top: 0px;
-  @media screen and (max-width: 650px) {
-    margin: 20px auto;
-  }
+
   &_arrow {
     position: absolute;
     top: 50%;
