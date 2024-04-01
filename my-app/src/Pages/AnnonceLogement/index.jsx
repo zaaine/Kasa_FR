@@ -1,6 +1,5 @@
 // React
 import React, { useEffect, useState } from 'react'
-// import { Link } from "react-router-dom"
 import { useParams } from 'react-router-dom'
 import { Rating } from 'react-simple-star-rating'
 
@@ -8,6 +7,9 @@ import { Rating } from 'react-simple-star-rating'
 import annonces from '../../Assets/AnnoncesLogement/annonces.json'
 import '../../Styles/5.Pages/Annonce.scss/Page_Annonce.scss'
 import arrow_back from '../../Assets/images/Arrows/arrow_back_ios-24px 2.png'
+
+// componements
+import Slider from '../../ComponentsReact/Carousel'
 
 function AnnonceLogement() {
   const [value, setValue] = useState('')
@@ -24,10 +26,12 @@ function AnnonceLogement() {
     setView(!view)
   }
 
+  const [imageSlider, setImageSlider] = useState([])
+
   useEffect(() => {
-    annonces.map((annonce, index) => {
+    annonces.map((annonce) => {
       if (annonceID === annonce.id) {
-        setValue(annonce)
+        setValue(annonce), setImageSlider(annonce.pictures)
       }
     })
   }, [])
@@ -37,11 +41,10 @@ function AnnonceLogement() {
   }
 
   return (
-    // Partie 1 carroussel
     <div className="annonce-contenaire">
-      <div className="annonce-imgs">
-        <img className="annonce-img" src={value.cover} alt="" />
-      </div>
+      {/* // Partie 1 carroussel */}
+
+      <Slider imageSlider={imageSlider} />
 
       {/* Partie 2 */}
       <div>
@@ -87,12 +90,14 @@ function AnnonceLogement() {
         <div>
           <div className="contenaire_description">
             <div> Description </div>
-            <img
-              onClick={toggleFunction}
-              className={toggle ? 'arrow' : 'arrow-back'}
-              src={arrow_back}
-              alt="ouvrir"
-            />
+            <div className="tools">
+              <img
+                onClick={toggleFunction}
+                className={toggle ? 'arrow' : 'arrow-back'}
+                src={arrow_back}
+                alt="ouvrir"
+              />
+            </div>
           </div>
           <div className={toggle ? 'annonce-description' : 'annonce-clear'}>
             {value.description}
@@ -102,12 +107,14 @@ function AnnonceLogement() {
         <div>
           <div className="contenaire_equipments">
             <div>Équipements</div>
-            <img
-              onClick={toggleFunctionBis}
-              className={view ? 'arrow' : 'arrow-back'}
-              src={arrow_back}
-              alt="ouvrir"
-            />
+            <div className="tools">
+              <img
+                onClick={toggleFunctionBis}
+                className={view ? 'arrow' : 'arrow-back'}
+                src={arrow_back}
+                alt="ouvrir"
+              />
+            </div>
           </div>
           <div>
             <div className={view ? 'annonce-equipments' : 'annonce-clear'}>

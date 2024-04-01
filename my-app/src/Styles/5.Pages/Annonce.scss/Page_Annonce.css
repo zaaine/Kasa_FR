@@ -22,17 +22,6 @@
   margin-right: 2.5rem;
 }
 
-.annonce-imgs {
-  display: flex;
-  width: 100%;
-}
-.annonce-imgs .annonce-img {
-  height: 25.9375rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .contenaire_titre {
   height: 5rem;
   display: flex;
@@ -82,6 +71,7 @@
 .annonce-location {
   height: 1.8125rem;
   margin: 0px;
+  padding-top: 1.25rem;
   color: #000;
   font-family: Montserrat;
   font-size: 1.125rem;
@@ -96,14 +86,13 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: baseline;
   flex-wrap: nowrap;
 }
 .contenaire_comments .contenaire_tags {
   display: flex;
   gap: 2rem;
   margin-right: 2rem;
-  padding-top: 1rem;
 }
 .contenaire_comments .annonce-tags {
   height: 1.5625rem;
@@ -123,17 +112,26 @@
 }
 
 .box-description-equipments {
-  display: flex;
+  display: grid;
   gap: 4.75rem;
   width: 100%;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 650px) {
+  .box-description-equipments {
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+}
+.box-description-equipments .tools {
+  display: flex;
+  width: 2rem;
 }
 .box-description-equipments .contenaire_description {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 28rem;
-  width: 100%;
   margin-bottom: 1rem;
   padding: 0.625rem 1.25rem 0.625rem 0.625rem;
   color: white;
@@ -157,7 +155,6 @@
   cursor: pointer;
 }
 .box-description-equipments .annonce-description {
-  min-width: 25rem;
   font-weight: 300;
   display: block;
   animation: container-view 2s ease-in-out;
@@ -177,8 +174,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  min-width: 30rem;
   margin-bottom: 1rem;
   color: white;
   border-radius: 0.3125rem;
@@ -193,7 +188,6 @@
 .box-description-equipments .annonce-equipments {
   animation: container-view 7s ease-in-out;
   display: block;
-  width: 26.375rem;
 }
 .box-description-equipments .equipement {
   color: #000;

@@ -8,18 +8,6 @@
   margin-right: 2.5rem;
 }
 
-// carroussel
-.annonce-imgs {
-  display: flex;
-  width: 100%;
-
-  .annonce-img {
-    height: 25.9375rem;
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
 .contenaire_titre {
   height: 5rem;
   display: flex;
@@ -61,6 +49,7 @@
 .annonce-location {
   height: 1.8125rem;
   margin: 0px;
+  padding-top: 1.25rem;
   @include text-style;
 }
 
@@ -68,14 +57,13 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: baseline;
   flex-wrap: nowrap;
 
   .contenaire_tags {
     display: flex;
     gap: 2rem;
     margin-right: 2rem;
-    padding-top: 1rem;
   }
 
   .annonce-tags {
@@ -90,17 +78,25 @@
 }
 
 .box-description-equipments {
-  display: flex;
+  display: grid;
   gap: 4.75rem;
   width: 100%;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 650px) {
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+
+  .tools {
+    display: flex;
+    width: 2rem;
+  }
 
   .contenaire_description {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 28rem;
-    width: 100%;
     margin-bottom: 1rem;
     padding: 0.625rem 1.25rem 0.625rem 0.625rem;
     @include contenaire-style;
@@ -120,7 +116,6 @@
   }
 
   .annonce-description {
-    min-width: 25rem;
     font-weight: 300;
     display: block;
     animation: container-view 2s ease-in-out;
@@ -135,8 +130,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    min-width: 30rem;
     margin-bottom: 1rem;
     @include contenaire-style;
     padding: 0.625rem 1.25rem 0.625rem 0.625rem;
@@ -145,7 +138,6 @@
   .annonce-equipments {
     animation: container-view 7s ease-in-out;
     display: block;
-    width: 26.375rem;
   }
 
   .equipement {

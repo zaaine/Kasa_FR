@@ -1,0 +1,44 @@
+@import '../../3.Layouts/mixins';
+@import '../../3.Layouts/_globalStyle';
+
+.carrousel {
+  height: 25.9375rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5625rem;
+  margin: 43px auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 16/9;
+  margin-top: 0px;
+  @media screen and (max-width: 650px) {
+    margin: 20px auto;
+  }
+  &_arrow {
+    position: absolute;
+    top: 50%;
+    height: 10%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &:active {
+      transform: translateY(-50%) scale(0.9);
+    }
+    &_right {
+      right: 25px;
+    }
+    &_left {
+      left: 25px;
+    }
+  }
+  .pagination {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: clamp(14px, 2vw, 18px);
+  }
+}

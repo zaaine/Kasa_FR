@@ -13,6 +13,7 @@
     "prettier/prettier": "error",
     "ignoreImports": "off",
     "ignoreDestructuring": true,
-    "camelcase": "off"
+    "camelcase": "off",
+    "react/prop-types": "off"
   }
 }
