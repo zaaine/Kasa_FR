@@ -31,6 +31,7 @@
   .headerContainer .links {
     text-transform: uppercase;
     font-size: 0.75rem;
+    gap: 0rem;
   }
 }
 .headerContainer .links > .linkAccueil,
