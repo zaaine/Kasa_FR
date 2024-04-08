@@ -7,7 +7,7 @@ function Error() {
     <div className="LayoutPage404">
       <h1 className="number404"> 404</h1>
 
-      <p className="text404">Oups! La page que vous demandez n'existe pas.</p>
+      <p className="text404">Oups! La page que vous demandez n existe pas.</p>
 
       <Link className="linkHome" to="/" href="/">
         {' '}

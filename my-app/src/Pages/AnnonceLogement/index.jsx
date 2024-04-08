@@ -1,7 +1,7 @@
 // React
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { Rating } from 'react-simple-star-rating'
+import PropTypes from 'prop-types'
 
 // Files
 import annonces from '../../Assets/AnnoncesLogement/annonces.json'
@@ -11,6 +11,7 @@ import arrow_back from '../../Assets/images/Arrows/arrow_back_ios-24px 2.png'
 // componements
 import Slider from '../../ComponentsReact/Carousel'
 import Error from '../Error'
+import Rating from '../../ComponentsReact/Rating/index'
 
 function AnnonceLogement() {
   const [value, setValue] = useState('')
@@ -28,6 +29,8 @@ function AnnonceLogement() {
   }
 
   const [imageSlider, setImageSlider] = useState([])
+
+  const rating = value.rating
 
   useEffect(() => {
     annonces.map((annonce) => {
@@ -77,17 +80,7 @@ function AnnonceLogement() {
           ))}
         </div>
 
-        <div className="stars-wrapper">
-          <Rating
-            className="stars-notation"
-            initialValue={value.rating}
-            readonly={true}
-            fillClassName="stars-notation"
-            fillColor="#ff6060"
-            value={value.rating}
-            size={'30px'}
-          />
-        </div>
+        <Rating rating={value.rating} />
       </section>
 
       {/* Partie 3 */}
