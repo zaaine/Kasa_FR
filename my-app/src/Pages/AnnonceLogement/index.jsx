@@ -80,7 +80,7 @@ function AnnonceLogement() {
           ))}
         </div>
 
-        <Rating scale={rating} />
+        <Rating rating={value.rating} />
       </section>
 
       {/* Partie 3 */}

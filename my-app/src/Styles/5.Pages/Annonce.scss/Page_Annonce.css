@@ -49,6 +49,8 @@
   .contenaire_titre .contenaire_identite {
     position: relative;
     top: 11rem;
+    font-size: 0.75rem;
+    gap: 0.5rem;
   }
 }
 .contenaire_titre .annonce-title {
@@ -241,10 +243,11 @@
 @media screen and (max-width: 650px) {
   .stars-wrapper {
     position: relative;
-    right: 2rem;
+    width: auto;
     bottom: 1rem;
   }
 }
 .stars-wrapper .stars-notation {
   size: 15px;
+  width: 25px;
 }/*# sourceMappingURL=Page_Annonce.css.map */
