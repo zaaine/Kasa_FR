@@ -1,10 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import LOGO from '../../Assets/images/LOGO.png'
+import React from "react";
+import { Link } from "react-router-dom";
+import LOGO from "../../Assets/images/LOGO.png";
 
 // import styles_Header from '../../Styles/5.Pages/StyleHeader/styles_Header.scss'
 
-import styles_Header from '../../Styles/4.Components/Header.scss/styles_Header.scss'
+import styles_Header from "../../Styles/4.Components/Header.scss/styles_Header.scss";
 
 function Header() {
   return (
@@ -13,17 +13,17 @@ function Header() {
         <img className="logo" src={LOGO} />
       </div>
       <div className="links">
-        <a className="linkAccueil" to="/" href="/">
-          {' '}
+        <Link className="linkAccueil" to="/">
+          {" "}
           Accueil
-        </a>
-        <a className="linkApropos" to="/Apropos" href="Apropos">
-          {' '}
+        </Link>
+        <Link className="linkApropos" to="/Apropos">
+          {" "}
           A Propos
-        </a>
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
