@@ -1,5 +1,5 @@
-@import '../../3.Layouts/globalStyle';
-@import '../../3.Layouts/mixins';
+@import "../../3.Layouts/globalStyle";
+@import "../../3.Layouts/mixins";
 
 .cards-container {
   height: auto;
@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-content: space-around;
-  justify-content: space-around;
+  justify-content: center;
   align-items: stretch;
   justify-items: stretch;
   box-sizing: border-box;
