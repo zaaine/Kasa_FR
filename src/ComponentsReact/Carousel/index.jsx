@@ -62,7 +62,7 @@ Slider.propTypes = {
 };
 
 Slider.defaultProps = {
-  imageSlider: "",
+  imageSlider: [],
 };
 
 export default Slider;

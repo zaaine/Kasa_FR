@@ -13,24 +13,17 @@ import Slider from "../../ComponentsReact/Carousel";
 import Error from "../Error";
 import Rating from "../../ComponentsReact/Rating/index";
 
+// Compartiments Pages
+import DescriptionAndEquipments from "../../ComponentsReact/Contenaire/index";
+import TagsAndRating from "../../ComponentsReact/TagsAndRating/index";
+import AnnonceTitre from "../../ComponentsReact/AnnonceTitres/index";
+
 function AnnonceLogement() {
   const [value, setValue] = useState("");
   const params = useParams();
   const annonceID = params.id;
 
-  const [toggle, setToggle] = useState(false);
-  const toggleFunction = () => {
-    setToggle(!toggle);
-  };
-
-  const [view, setView] = useState(false);
-  const toggleFunctionBis = () => {
-    setView(!view);
-  };
-
   const [imageSlider, setImageSlider] = useState([]);
-
-  const rating = value.rating;
 
   useEffect(() => {
     annonces.map((annonce) => {
@@ -56,75 +49,21 @@ function AnnonceLogement() {
       <Slider imageSlider={imageSlider} />
 
       {/* Partie 2 : Contenaire Annonce */}
-      <div>
-        <div className="contenaire_titre">
-          <h1 className="annonce-title">{value.title} </h1>
-          <div className="contenaire_identite">
-            <p className="annonce-name">{value.host.name}</p>
-            <img
-              className="annonce-photo"
-              src={value.host.picture}
-              alt="présentation du logement"
-            />
-          </div>
-        </div>
-        <p className="annonce-location">{value.location} </p>
-      </div>
 
-      <section className="contenaire_comments">
-        <div className="contenaire_tags">
-          {value.tags.map((tag, i) => (
-            <p key={i} className="annonce-tags">
-              {tag}
-            </p>
-          ))}
-        </div>
+      <AnnonceTitres
+        title={value.title}
+        host={value.host}
+        location={value.location}
+      ></AnnonceTitres>
 
-        <Rating rating={value.rating} />
-      </section>
+      <TagsAndRating tags={value.tags} rating={value.rating}></TagsAndRating>
 
-      {/* Partie 3 */}
-      <section className="box-description-equipments">
-        <div>
-          <div className="contenaire_description">
-            <div> Description </div>
-            <div className="tools">
-              <img
-                className={toggle ? "arrow" : "arrow-back"}
-                onClick={toggleFunction}
-                src={arrow_back}
-                alt="cliquez pour voir le contenu"
-              />
-            </div>
-          </div>
-          <div className={toggle ? "annonce-description" : "annonce-clear"}>
-            {value.description}
-          </div>
-        </div>
+      {/* Partie 3 : Description & Equipement */}
 
-        <div>
-          <div className="contenaire_equipments">
-            <div>Équipements</div>
-            <div className="tools">
-              <img
-                className={view ? "arrow" : "arrow-back"}
-                alt="cliquez pour voir le contenu"
-                src={arrow_back}
-                onClick={toggleFunctionBis}
-              />
-            </div>
-          </div>
-          <div>
-            <div className={view ? "annonce-equipments" : "annonce-clear"}>
-              {value.equipments.map((equipment, i) => (
-                <div key={i}>
-                  <p className="equipement">{equipment}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <DescriptionAndEquipments
+        description={value.description}
+        equipments={value.equipments}
+      />
     </div>
   );
 }
