@@ -68,13 +68,11 @@
 }
 
 .annonce-descriptionP {
-  min-width: 25rem;
-  font-weight: 300;
   display: block;
   animation: container-view 2s ease-in-out;
   @include text-style;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .annonce-clear {
