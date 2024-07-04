@@ -6,9 +6,9 @@ function AnnonceTitres({ title, host, location }) {
   return (
     <div>
       <div className="contenaire_titre">
-        <h1 className="annonce-title">{value.title} </h1>
+        <h1 className="annonce-title">{title} </h1>
         <div className="contenaire_identite">
-          <p className="annonce-name">{value.host.name}</p>
+          <p className="annonce-name">{host.name}</p>
           <img
             className="annonce-photo"
             src={value.host.picture}
@@ -16,7 +16,7 @@ function AnnonceTitres({ title, host, location }) {
           />
         </div>
       </div>
-      <p className="annonce-location">{value.location} </p>
+      <p className="annonce-location">{location} </p>
     </div>
   );
 }
