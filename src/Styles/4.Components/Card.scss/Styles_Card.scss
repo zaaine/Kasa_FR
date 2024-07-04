@@ -1,5 +1,5 @@
-@import "../../3.Layouts/globalStyle";
-@import "../../3.Layouts/mixins";
+@import '../../3.Layouts/globalStyle';
+@import '../../3.Layouts/mixins';
 
 .cards-container {
   height: auto;
@@ -14,8 +14,7 @@
   align-items: stretch;
   justify-items: stretch;
   box-sizing: border-box;
-  padding-left: 3.13rem;
-  padding-right: 3.13rem;
+  padding-right: 2.13rem;
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -30,7 +29,7 @@
 }
 
 .card-wrapper {
-  width: 19rem;
+  width: 95%;
   height: 21.25rem;
   background: linear-gradient(
     180deg,
@@ -45,7 +44,7 @@
   flex-wrap: nowrap;
   cursor: pointer;
   border-radius: 0.625rem;
-  margin: 2rem;
+  margin: 1.5rem;
   text-decoration: none;
   @media screen and (max-width: 750px) {
     width: auto;
@@ -56,13 +55,12 @@
 }
 
 .card-img {
-  width: 18rem;
+  width: 90%;
   height: 12rem;
   border-radius: 0.625rem;
   margin: 1rem;
   object-fit: cover;
   position: relative;
-  right: 0.5rem;
   margin-bottom: revert;
   @media screen and (max-width: 750px) {
     width: auto;

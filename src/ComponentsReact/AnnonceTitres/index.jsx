@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import "../../Styles/5.Pages/Annonce.scss/Page_Annonce.scss";
+import '../../Styles/5.Pages/Annonce.scss/Page_Annonce.scss'
 
 function AnnonceTitres({ title, host, location }) {
   return (
@@ -11,14 +11,14 @@ function AnnonceTitres({ title, host, location }) {
           <p className="annonce-name">{host.name}</p>
           <img
             className="annonce-photo"
-            src={value.host.picture}
+            src={host.picture}
             alt="présentation du logement"
           />
         </div>
       </div>
       <p className="annonce-location">{location} </p>
     </div>
-  );
+  )
 }
 
-export default AnnonceTitres;
+export default AnnonceTitres
