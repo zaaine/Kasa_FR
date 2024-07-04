@@ -1,52 +1,52 @@
 // React
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import PropTypes from 'prop-types'
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import PropTypes from "prop-types";
 
 // Files
-import annonces from '../../Assets/AnnoncesLogement/annonces.json'
-import '../../Styles/5.Pages/Annonce.scss/Page_Annonce.scss'
-import arrow_back from '../../Assets/images/Arrows/arrow_back_ios-24px 2.png'
+import annonces from "../../Assets/AnnoncesLogement/annonces.json";
+import "../../Styles/5.Pages/Annonce.scss/Page_Annonce.scss";
+import arrow_back from "../../Assets/images/Arrows/arrow_back_ios-24px 2.png";
 
 // componements
-import Slider from '../../ComponentsReact/Carousel'
-import Error from '../Error'
-import Rating from '../../ComponentsReact/Rating/index'
+import Slider from "../../ComponentsReact/Carousel";
+import Error from "../Error";
+import Rating from "../../ComponentsReact/Rating/index";
 
 function AnnonceLogement() {
-  const [value, setValue] = useState('')
-  const params = useParams()
-  const annonceID = params.id
+  const [value, setValue] = useState("");
+  const params = useParams();
+  const annonceID = params.id;
 
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
   const toggleFunction = () => {
-    setToggle(!toggle)
-  }
+    setToggle(!toggle);
+  };
 
-  const [view, setView] = useState(false)
+  const [view, setView] = useState(false);
   const toggleFunctionBis = () => {
-    setView(!view)
-  }
+    setView(!view);
+  };
 
-  const [imageSlider, setImageSlider] = useState([])
+  const [imageSlider, setImageSlider] = useState([]);
 
-  const rating = value.rating
+  const rating = value.rating;
 
   useEffect(() => {
     annonces.map((annonce) => {
       if (annonceID === annonce.id) {
-        setValue(annonce)
-        setImageSlider(annonce.pictures)
+        setValue(annonce);
+        setImageSlider(annonce.pictures);
       }
-    })
-  }, [])
+    });
+  }, []);
 
-  if (value === '') {
+  if (value === "") {
     return (
       <div>
         <Error />
       </div>
-    )
+    );
   }
 
   return (
@@ -55,7 +55,7 @@ function AnnonceLogement() {
 
       <Slider imageSlider={imageSlider} />
 
-      {/* Partie 2 */}
+      {/* Partie 2 : Contenaire Annonce */}
       <div>
         <div className="contenaire_titre">
           <h1 className="annonce-title">{value.title} </h1>
@@ -90,14 +90,14 @@ function AnnonceLogement() {
             <div> Description </div>
             <div className="tools">
               <img
-                className={toggle ? 'arrow' : 'arrow-back'}
+                className={toggle ? "arrow" : "arrow-back"}
                 onClick={toggleFunction}
                 src={arrow_back}
                 alt="cliquez pour voir le contenu"
               />
             </div>
           </div>
-          <div className={toggle ? 'annonce-description' : 'annonce-clear'}>
+          <div className={toggle ? "annonce-description" : "annonce-clear"}>
             {value.description}
           </div>
         </div>
@@ -107,7 +107,7 @@ function AnnonceLogement() {
             <div>Équipements</div>
             <div className="tools">
               <img
-                className={view ? 'arrow' : 'arrow-back'}
+                className={view ? "arrow" : "arrow-back"}
                 alt="cliquez pour voir le contenu"
                 src={arrow_back}
                 onClick={toggleFunctionBis}
@@ -115,7 +115,7 @@ function AnnonceLogement() {
             </div>
           </div>
           <div>
-            <div className={view ? 'annonce-equipments' : 'annonce-clear'}>
+            <div className={view ? "annonce-equipments" : "annonce-clear"}>
               {value.equipments.map((equipment, i) => (
                 <div key={i}>
                   <p className="equipement">{equipment}</p>
@@ -126,7 +126,7 @@ function AnnonceLogement() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
-export default AnnonceLogement
+export default AnnonceLogement;
