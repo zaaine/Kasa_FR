@@ -18,7 +18,6 @@ function Apropos() {
       {Apropos_data.map((data, index) => (
         <Collapse key={index} title={data.title} content={data.content} />
       ))}
-      <p>Titre </p>
     </div>
   );
 }

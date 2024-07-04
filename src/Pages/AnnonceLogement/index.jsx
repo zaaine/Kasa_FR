@@ -16,7 +16,7 @@ import Rating from "../../ComponentsReact/Rating/index";
 // Compartiments Pages
 import DescriptionAndEquipments from "../../ComponentsReact/Contenaire/index";
 import TagsAndRating from "../../ComponentsReact/TagsAndRating/index";
-import AnnonceTitre from "../../ComponentsReact/AnnonceTitres/index";
+import AnnonceTitres from "../../ComponentsReact/AnnonceTitres/index";
 
 function AnnonceLogement() {
   const [value, setValue] = useState("");
@@ -54,9 +54,9 @@ function AnnonceLogement() {
         title={value.title}
         host={value.host}
         location={value.location}
-      ></AnnonceTitres>
+      />
 
-      <TagsAndRating tags={value.tags} rating={value.rating}></TagsAndRating>
+      <TagsAndRating tags={value.tags} rating={value.rating} />
 
       {/* Partie 3 : Description & Equipement */}
 

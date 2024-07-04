@@ -5,6 +5,7 @@ import Paysage from "../../Assets/images/Paysage.png";
 import "../../Styles/5.Pages/Apropos.scss/Style_Apropos.scss";
 import arrow_back from "../../Assets/images/Arrows/arrow_back_ios-24px 2.png";
 import Apropos_data from "../../Assets/Apropos_data/Apropos.json";
+import PropTypes from "prop-types";
 
 function Collapse({ title, content }) {
   const [toggle, setToggle] = useState(false);
@@ -29,6 +30,7 @@ function Collapse({ title, content }) {
     </div>
   );
 }
+
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.oneOfType([
