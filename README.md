@@ -1,3 +1,5 @@
+![Logo](Kasa_FR/src/Assets/images/LOGO.png)
+
 # Kasa_FR
 
 Projet n°8 : Refonte site Kasa avec React
@@ -90,3 +92,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+![screenshot site finalisé ](Kasa_FR/src/Assets/images/Kasa_screen.webp)
+
+By ZAAINE AZIZ
