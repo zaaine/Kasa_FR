@@ -1,4 +1,4 @@
-![Logo](Kasa_FR/src/Assets/images/LOGO.png)
+![Logo](src/Assets/images/LOGO.png)
 
 # Kasa_FR
 
